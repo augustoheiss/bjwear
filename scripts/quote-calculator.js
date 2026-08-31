@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     quantity: '50 unidades',
     quantityValue: 50,
     productType: 'Camiseta Dry-Fit Tradicional',
-    fabric: 'Dry-Fit Microfibra 100% Poliéster',
+    fabric: 'Dry-Fit Poliamida 6.6 Premium UV',
     customization: 'Lisa (Sem Estampa)',
     segment: 'Atacado Direto de Fábrica'
   };
@@ -27,7 +27,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const summaryCustom = document.getElementById('summary-custom');
   const summaryTier = document.getElementById('summary-tier');
   
+  const tierCards = {
+    1: document.getElementById('tier-card-1'),
+    2: document.getElementById('tier-card-2'),
+    3: document.getElementById('tier-card-3'),
+    4: document.getElementById('tier-card-4')
+  };
+
   const btnSendQuote = document.getElementById('btn-send-quote');
+
+  function updateTierSelection(tierNum) {
+    Object.values(tierCards).forEach(card => {
+      if (card) card.classList.remove('selected');
+    });
+    if (tierCards[tierNum]) {
+      tierCards[tierNum].classList.add('selected');
+    }
+  }
 
   function updateSummary() {
     if (summaryQty) summaryQty.textContent = state.quantity;
@@ -38,13 +54,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Determine scale discount tier
     if (summaryTier) {
       if (state.quantityValue >= 1000) {
-        summaryTier.textContent = '🌟 Tier Distribuidor / Grande Lote (Preço Máximo de Fábrica)';
+        summaryTier.textContent = '🌟 Tier 4 • Distribuidor Nacional (Escala Máxima Fabril)';
+        updateTierSelection(4);
       } else if (state.quantityValue >= 500) {
-        summaryTier.textContent = '⚡ Tier Confecção em Escala (Alta Margem B2B)';
-      } else if (state.quantityValue >= 100) {
-        summaryTier.textContent = '🔥 Tier Atacado Corporativo / Academias';
+        summaryTier.textContent = '⚡ Tier 3 • Private Label & Marcas (Desconto 28%)';
+        updateTierSelection(3);
+      } else if (state.quantityValue >= 50) {
+        summaryTier.textContent = '🔥 Tier 2 • Academias & Box (Desconto de Escala 16%)';
+        updateTierSelection(2);
       } else {
-        summaryTier.textContent = '📦 Tier Lote Inicial (Mínimo a partir de 20 un)';
+        summaryTier.textContent = '📦 Tier 1 • Lote Inicial (Mínimo a partir de 20 un)';
+        updateTierSelection(1);
       }
     }
 
@@ -106,6 +126,21 @@ Poderiam me informar a estimativa de valores por peça e o prazo de produção? 
     'customization', 
     p => p.getAttribute('data-calc-custom')
   );
+
+  // Allow clicking on Tier cards directly
+  Object.entries(tierCards).forEach(([tierKey, card]) => {
+    if (card) {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => {
+        const valMap = { '1': 20, '2': 50, '3': 500, '4': 1000 };
+        const targetVal = valMap[tierKey];
+        const matchingPill = Array.from(quantityPills).find(p => parseInt(p.getAttribute('data-val'), 10) === targetVal);
+        if (matchingPill) {
+          matchingPill.click();
+        }
+      });
+    }
+  });
 
   // Initial render
   updateSummary();

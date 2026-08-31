@@ -1,85 +1,42 @@
-# 🧵 BJ-Wear: Landing Page de Alta Conversão (B2B + D2C)
+# BJ-Wear | Confecção Têxtil, Camisetas Dry-Fit & Atacado Direto de Fábrica
 
-> Plataforma web de alta performance desenvolvida para a **BJ-Wear**, confecção familiar boliviana com mais de 10 máquinas industriais em São Paulo. O projeto opera em modelo **Dual-Funnel**, integrando a venda no varejo via **Shopee** e a cotação no atacado e private label diretamente via **WhatsApp**.
-
----
-
-## 🌟 Principais Recursos
-
-1. **Dual-Funnel Hero & Architecture:**
-   - Canal Varejo: Direcionamento direto para a loja oficial na Shopee (Camiseta Dry Fit Masculina por R$ 29,90).
-   - Canal Atacado B2B: Calculadora interativa de cotação com montagem automática de mensagem formatada para WhatsApp.
-2. **Engenharia Têxtil & Inspeção de Tecido:**
-   - Destaque das propriedades do Dry-Fit (secagem rápida, proteção UV50+, costura dupla galoneira, anti-pilling).
-   - Macro zoom de textura têxtil demonstrando a respirabilidade do Honeycomb Mesh.
-3. **Galeria de Produtos Interativa:**
-   - Alternância fluida de fotos reais (`camisa-01.png` a `camisa-05.png`) com seletores de cor (Preto / Azul Marinho) e tamanhos (P ao GG).
-4. **Telemetria Fabril:**
-   - Contadores animados em tempo real: 10+ Máquinas Ativas, +15.000 Peças Entregues, 99.4% Pontualidade.
-5. **AEO & SEO de Última Geração:**
-   - Metatags Open Graph completas, Schema.org JSON-LD para `ClothingStore` e `Product`, além de `robots.txt` e `llms.txt` para motores de busca por IA (ChatGPT, Perplexity, Gemini).
+> Plataforma web de alta performance desenvolvida para a **BJ-Wear**, confecção e oficina têxtil familiar com mais de 10 máquinas industriais em São Paulo. O projeto opera em modelo **Dual-Funnel**, integrando a venda no varejo via **Shopee** e a cotação no atacado e private label diretamente via **WhatsApp**.
 
 ---
 
-## 📁 Estrutura de Pastas
+## 🔗 Links Oficiais
+
+- **Loja Oficial Shopee:** [shopee.com.br/brayanjoelmamani](https://shopee.com.br/brayanjoelmamani)
+- **Produto em Destaque:** [Camiseta Dry Fit Masculina Treino Academia 100% Poliamida UV](https://shopee.com.br/Camiseta-Dry-Fit-Masculina-Treino-Academia-100-Poliamida-UV--i.1475257700.22099690319?extraParams=%7B%22display_model_id%22%3A229447618450%2C%22model_selection_logic%22%3A3%7D)
+- **WhatsApp Comercial:** [+55 (11) 91326-7467](https://wa.me/5511913267467)
+- **Hospedagem & Deploy:** [Vercel](https://bjwear.vercel.app)
+
+---
+
+## ⚡ Estrutura do Projeto
 
 ```
-BJ-Wear/
-├── master-plan/                          # Documentos de arquitetura e pesquisas DeepResearch
-│   ├── 01_master_plan_bj_wear.md
-│   ├── 02_deep_research_prompts.md
-│   ├── 03_skill_plugins_orchestration.md
-│   └── DEEPRESEARCH-*.md
-├── public/
-│   ├── assets/
-│   │   └── images/                       # Fotos dos produtos, tecidos e oficina
-│   ├── robots.txt                        # Regras para buscadores e IA
-│   └── llms.txt                          # Contexto semântico para AEO
+bjwear/
+├── index.html                  # Landing Page Dual-Funnel
+├── vercel.json                 # Configuração de Edge Caching e Rotas Vercel
+├── robots.txt                  # Diretivas de indexação para buscadores
+├── llms.txt                    # Documentação semântica para motores de IA (AEO/GEO)
 ├── styles/
-│   ├── variables.css                     # Tokens de design e paleta de cores
-│   ├── components.css                    # Botões, badges, calculadora, galeria
-│   └── main.css                          # Layout responsivo e micro-animações
+│   ├── variables.css           # Tokens de design, cores, tipografia e espaçamentos
+│   ├── components.css          # Botões, cards, calculadora B2B, tabela de medidas
+│   └── main.css                # Layout responsivo e utilitários
 ├── scripts/
-│   ├── main.js                           # Galeria, contadores e acordeom FAQ
-│   └── quote-calculator.js               # Calculador de cotação WhatsApp
-├── index.html                            # Estrutura HTML5 semântica e acessível
-├── vercel.json                           # Configuração de edge caching e segurança na Vercel
-├── package.json                          # Scripts de execução local
-└── README.md
+│   ├── quote-calculator.js     # Calculadora interativa de cotação com encoding wa.me
+│   └── main.js                 # Galeria interativa, contadores e FAQ accordion
+└── assets/
+    └── images/                 # Fotos reais dos produtos e maquinário
 ```
 
 ---
 
-## 🚀 Como Executar Localmente
+## 🛠️ Tecnologias & Engenharia
 
-Você pode abrir o arquivo `index.html` diretamente no navegador ou executar um servidor local ultrarrápido:
-
-```bash
-# Na pasta BJ-Wear:
-npm run dev
-```
-
-Abra no navegador em: `http://localhost:3000`
-
----
-
-## 🌐 Como Fazer Deploy na Vercel
-
-O projeto está 100% pronto para deploy na **Vercel**:
-
-### Opção 1: Pela Interface Web da Vercel
-1. Acesse [vercel.com/new](https://vercel.com/new)
-2. Importe o repositório Git ou arraste a pasta `BJ-Wear`.
-3. Defina o nome do projeto como `bjwear`.
-4. Clique em **Deploy**.
-
-### Opção 2: Pela CLI da Vercel
-```bash
-npx -y vercel --prod
-```
-
-### Apontamento de Domínio Próprio Futuro:
-1. No painel da Vercel em *Settings -> Domains*, adicione o domínio (ex: `bjwear.com.br`).
-2. No seu registrador de domínio (ex: Registro.br ou Cloudflare), configure os registros DNS indicados pela Vercel:
-   - **Tipo A:** `76.76.21.21` (para `@`)
-   - **Tipo CNAME:** `cname.vercel-dns.com` (para `www`)
+- **Arquitetura Zero-Database:** HTML5 Semântico, CSS3 Moderno e Vanilla JavaScript modular.
+- **Edge Deployment:** Vercel Edge Network (gru1 POP São Paulo) com TTFB < 50ms.
+- **Dual-Funnel UX:** Separação entre comprador institucional B2B e consumidor unitário Shopee.
+- **Schema.org JSON-LD:** Marcação estruturada completa para `LocalBusiness`, `ClothingStore` e `Product`.

@@ -23,7 +23,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* --- 2. Interactive Product Showcase Gallery --- */
+  /* --- 2. Audience Mode Switcher (Header) --- */
+  const audienceTabs = document.querySelectorAll('.audience-tab');
+  audienceTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      audienceTabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      const funnelType = tab.getAttribute('data-target-funnel');
+      const targetId = funnelType === 'd2c' ? '#varejo-shopee' : '#calculadora-b2b';
+      const targetEl = document.querySelector(targetId);
+
+      if (targetEl) {
+        const headerOffset = 80;
+        const elementPosition = targetEl.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  /* --- 3. Interactive Product Showcase Gallery --- */
   const mainImage = document.getElementById('gallery-main');
   const thumbBtns = document.querySelectorAll('.thumb-btn');
   const colorBtns = document.querySelectorAll('.color-option-btn');
@@ -67,7 +94,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* --- 3. Telemetry Counter Animation on Scroll --- */
+  /* --- 4. Interactive Macro Zoom Effect --- */
+  const macroTarget = document.getElementById('macro-lens-target');
+  if (macroTarget) {
+    const macroImg = macroTarget.querySelector('img');
+    macroTarget.addEventListener('mousemove', (e) => {
+      const { left, top, width, height } = macroTarget.getBoundingClientRect();
+      const x = ((e.clientX - left) / width) * 100;
+      const y = ((e.clientY - top) / height) * 100;
+      if (macroImg) {
+        macroImg.style.transformOrigin = `${x}% ${y}%`;
+      }
+    });
+
+    macroTarget.addEventListener('mouseleave', () => {
+      if (macroImg) {
+        macroImg.style.transformOrigin = 'center center';
+      }
+    });
+  }
+
+  /* --- 5. Telemetry Counter Animation on Scroll --- */
   const counters = document.querySelectorAll('.telemetry-value[data-target]');
   let hasAnimated = false;
 
@@ -122,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(telemetrySection);
   }
 
-  /* --- 4. FAQ Accordion --- */
+  /* --- 6. FAQ Accordion --- */
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
     const questionBtn = item.querySelector('.faq-question');
@@ -146,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /* --- 5. Smooth Scroll for Internal Anchors --- */
+  /* --- 7. Smooth Scroll for Internal Anchors --- */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       const targetId = this.getAttribute('href');
