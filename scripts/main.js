@@ -212,4 +212,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  /* --- 8. LGPD Privacy Banner Handler --- */
+  const lgpdBanner = document.getElementById('lgpd-banner');
+  const btnAcceptLgpd = document.getElementById('btn-accept-lgpd');
+
+  if (lgpdBanner && btnAcceptLgpd) {
+    const hasConsented = localStorage.getItem('bjwear_lgpd_consent');
+    if (!hasConsented) {
+      setTimeout(() => {
+        lgpdBanner.style.display = 'block';
+      }, 1000);
+    }
+
+    btnAcceptLgpd.addEventListener('click', () => {
+      localStorage.setItem('bjwear_lgpd_consent', 'true');
+      lgpdBanner.style.opacity = '0';
+      lgpdBanner.style.transition = 'opacity 0.3s ease';
+      setTimeout(() => {
+        lgpdBanner.style.display = 'none';
+      }, 300);
+    });
+  }
 });
+
