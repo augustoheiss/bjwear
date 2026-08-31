@@ -4,6 +4,7 @@
   "private": true,
   "description": "BJ-Wear Confecções - Landing Page de Alta Conversão B2B e Varejo Shopee",
   "scripts": {
+    "build": "echo 'Static build ready'",
     "dev": "npx -y serve . -l 3000",
     "start": "npx -y serve . -l 3000"
   },
