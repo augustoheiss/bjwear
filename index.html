@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BJ-Wear | Confecção Têxtil, Camisetas Dry-Fit & Atacado Direto de Fábrica</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Oficina de confecção têxtil com mais de 10 máquinas industriais em São Paulo. Especialistas em camisetas Dry-Fit de alta performance para treino, academia e uniformes. Varejo na Shopee (R$ 29,90) e Atacado direto via WhatsApp.">
+  <meta name="keywords" content="confeccao dry fit atacado, oficina de costura sp, camiseta treino academia atacado, fabricante activewear, faccao de costura, private label dry fit sp, bj wear shopee, camiseta dry fit masculina">
+  <meta name="author" content="BJ-Wear Confecções">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://bjwear.vercel.app/">
+
+  <!-- Open Graph / Facebook / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bjwear.vercel.app/">
+  <meta property="og:title" content="BJ-Wear | Confecção Têxtil & Camisetas Dry-Fit Direto da Fábrica">
+  <meta property="og:description" content="Alta capacidade têxtil com 10+ máquinas industriais. Camisetas Dry-Fit a partir de R$ 29,90 no varejo e condições imbatíveis para atacado e private label.">
+  <meta property="og:image" content="https://bjwear.vercel.app/public/assets/images/camisa-01.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BJ-Wear | Confecção Têxtil & Camisetas Dry-Fit">
+  <meta name="twitter:description" content="Compre no varejo via Shopee ou monte seu pedido de atacado no WhatsApp direto com quem fabrica.">
+  <meta name="twitter:image" content="https://bjwear.vercel.app/public/assets/images/camisa-01.png">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧵</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- JSON-LD Structured Data (Schema.org for LocalBusiness & Product) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ClothingStore",
+        "@id": "https://bjwear.vercel.app/#organization",
+        "name": "BJ-Wear Confecções",
+        "url": "https://bjwear.vercel.app/",
+        "description": "Oficina de confecção têxtil especializada em activewear, camisetas dry-fit e produção em alta cadência.",
+        "telephone": "+55-11-91326-7467",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "priceRange": "R$ 15 - R$ 60"
+      },
+      {
+        "@type": "Product",
+        "name": "Camiseta Dry Fit Masculina Treino Academia 100% Poliéster",
+        "image": "https://bjwear.vercel.app/public/assets/images/camisa-01.png",
+        "description": "Camiseta esportiva Dry-Fit com secagem rápida, costura reforçada e proteção UV para treinos intensos e academias.",
+        "brand": {
+          "@type": "Brand",
+          "name": "BJ-WEAR"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://shopee.com.br",
+          "priceCurrency": "BRL",
+          "price": "29.90",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@type": "Organization",
+            "name": "BJ-WEAR"
+          }
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- =========================================================================
+       HEADER / NAVBAR
+       ========================================================================= -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="Página Inicial BJ-Wear">
+        <span>BJ-WEAR</span>
+        <span class="brand-badge">FÁBRICA</span>
+      </a>
+
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-links">
+          <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+          <li><a href="#varejo-shopee" class="nav-link">Loja Shopee</a></li>
+          <li><a href="#calculadora-b2b" class="nav-link">Cotação Atacado</a></li>
+          <li><a href="#fabrica" class="nav-link">Nossa Fábrica</a></li>
+          <li><a href="#medidas" class="nav-link">Tabela de Medidas</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#calculadora-b2b" class="btn btn-whatsapp" id="header-cta-whatsapp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.634.072-1.805-.414-1.496-.622-2.457-2.146-2.531-2.247-.074-.1-6.19-8.232-1.39-1.282-.144-.145-.378-.225-.632-.225s-.684.099-.95.396c-.266.297-1.026 1.002-1.026 2.443 0 1.441 1.05 2.833 1.196 3.031.147.198 2.062 3.15 4.996 4.417.698.301 1.243.482 1.668.617.702.223 1.341.192 1.846.116.564-.085 1.73-.707 1.975-1.389.245-.682.245-1.266.171-1.388-.073-.122-.266-.198-.558-.344z"/></svg>
+          <span>Cotação Direta</span>
+        </a>
+        <button class="nav-toggle" aria-label="Abrir Menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION (DUAL-FUNNEL)
+         ========================================================================= -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-badge-row">
+              <span class="badge badge-glow">
+                <span class="pulse-beacon"></span>
+                Oficina Direta da Fábrica • São Paulo
+              </span>
+              <span class="badge badge-shopee">Loja Shopee Verificada</span>
+            </div>
+
+            <h1 class="hero-title">
+              Alta Capacidade Têxtil, <span class="text-gradient">Rigor em Cada Ponto</span>.
+            </h1>
+
+            <p class="hero-description">
+              Mais de <strong>10 máquinas industriais</strong> operando em alta cadência. Especialistas na confecção de camisetas <strong>Dry-Fit esportivas, activewear e uniformes</strong> no atacado e varejo. Qualidade de grife com preço direto de quem costura.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#calculadora-b2b" class="btn btn-cta btn-lg">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                <span>Simular Cotação Atacado</span>
+              </a>
+              <a href="#varejo-shopee" class="btn btn-shopee btn-lg">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19.5 7.5h-3.75V6a3.75 3.75 0 00-7.5 0v1.5H4.5a.75.75 0 00-.75.75v12a2.25 2.25 0 002.25 2.25h12A2.25 2.25 0 0020.25 20.25v-12a.75.75 0 00-.75-.75zM9.75 6a2.25 2.25 0 014.5 0v1.5h-4.5V6zm9 14.25a.75.75 0 01-.75.75H6a.75.75 0 01-.75-.75V9h3v1.5a.75.75 0 001.5 0V9h4.5v1.5a.75.75 0 001.5 0V9h3v11.25z"/></svg>
+                <span>Comprar 1 un na Shopee (R$ 29,90)</span>
+              </a>
+            </div>
+
+            <!-- Authority Points -->
+            <div style="display: flex; flex-wrap: wrap; gap: 1.25rem; font-size: 0.9rem; color: var(--text-secondary);">
+              <div style="display: flex; align-items: center; gap: 0.4rem;">
+                <svg width="18" height="18" fill="#22C55E" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Costura Dupla Reforçada</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.4rem;">
+                <svg width="18" height="18" fill="#22C55E" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Secagem Rápida & UV50+</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.4rem;">
+                <svg width="18" height="18" fill="#22C55E" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span>Envio para Todo o Brasil</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual Card -->
+          <div class="hero-visual-card">
+            <img src="public/assets/images/camisa-01.png" alt="Camisetas Dry Fit Masculinas BJ-Wear Preto e Azul Marinho" class="hero-product-img" loading="eager">
+            <div class="hero-floating-tag">
+              <div>
+                <span style="font-size: 0.78rem; color: var(--text-tertiary); text-transform: uppercase; font-weight: 700; display: block;">PRODUTO EM DESTAQUE</span>
+                <strong style="color: var(--text-primary); font-size: 1.05rem;">Camiseta Dry Fit Masculina Treino</strong>
+              </div>
+              <div style="text-align: right;">
+                <span style="font-size: 0.8rem; color: var(--text-tertiary); display: block;">A partir de</span>
+                <span style="font-size: 1.35rem; font-weight: 800; color: #22C55E;">R$ 29,90</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Telemetry Numbers Section -->
+        <div class="telemetry-grid">
+          <div class="telemetry-item">
+            <div class="telemetry-value" data-target="12" data-suffix="+">12+</div>
+            <div class="telemetry-label">Máquinas Industriais em Linha</div>
+          </div>
+          <div class="telemetry-item">
+            <div class="telemetry-value" data-target="15000" data-prefix="+" data-suffix="">+15.000</div>
+            <div class="telemetry-label">Peças Produzidas por Mês</div>
+          </div>
+          <div class="telemetry-item">
+            <div class="telemetry-value" data-target="99.4" data-suffix="%" data-decimal="true">99.4%</div>
+            <div class="telemetry-label">Entregas no Prazo B2B</div>
+          </div>
+          <div class="telemetry-item">
+            <div class="telemetry-value" data-target="15" data-suffix=" min">15 min</div>
+            <div class="telemetry-label">Tempo Médio de Resposta WhatsApp</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 1: DIFERENCIAIS TÉCNICOS & ENGENHARIA TÊXTIL
+         ========================================================================= -->
+    <section class="section" id="diferenciais">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Padrão Industrial Superior</span>
+          <h2 class="section-title">Por que as Peças BJ-Wear São a Escolha Certa?</h2>
+          <p class="section-desc">Combinamos a precisão artesanal da nossa família com maquinário industrial de ponta para entregar durabilidade extrema e caimento ergonômico.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 class="feature-title">Microfibra Dry-Fit Premium</h3>
+            <p class="feature-desc">Tecido com trama tecnológica de rápida absorção e evaporação contínua do suor. Mantém o corpo seco mesmo sob treinos de alta intensidade.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="feature-title">Costura Dupla & Galoneira</h3>
+            <p class="feature-desc">Costuras reforçadas em overlock de 4 fios e galoneira nas barras e mangas. Não descostura, não estica em excesso e não causa atrito na pele.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            </div>
+            <h3 class="feature-title">Proteção UV & Anti-Pilling</h3>
+            <p class="feature-desc">Fios sintéticos de alta tenacidade que não formam bolinhas (anti-pilling), não desbotam ao sol e protegem contra raios solares em treinos ao ar livre.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            </div>
+            <h3 class="feature-title">Modelagem Ergonômica</h3>
+            <p class="feature-desc">Corte calibrado para o biotipo brasileiro. Ajuste anatômico no peitoral e braços sem apertar o abdômen, proporcionando liberdade total de movimento.</p>
+          </div>
+        </div>
+
+        <!-- Macro Texture Visual Deep Dive -->
+        <div class="fabric-deep-dive">
+          <div class="macro-img-wrapper">
+            <img src="public/assets/images/fabric-macro.jpg" alt="Macro textura do tecido Dry Fit Honeycomb e costura plana reforçada BJ-Wear" loading="lazy">
+          </div>
+          <div>
+            <span class="badge badge-glow" style="margin-bottom: 1rem;">Inspeção Têxtil</span>
+            <h3 style="font-family: var(--font-family-display); font-size: 1.85rem; font-weight: 800; color: var(--text-primary); margin-bottom: 1rem;">
+              Trama Honeycomb Respirável com Ponto de Reforço
+            </h3>
+            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+              Observe a densidade uniforme dos micro-poros de ventilação e o travamento milimétrico do ponto de costura. Nossos operadores regulam a tensão de linha a cada troca de rolo para garantir que nenhuma peça sofra enrugamento (*puckering*) ou quebra de ponto.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <div style="background: rgba(255,255,255,0.04); padding: 0.75rem 1.25rem; border-radius: var(--border-radius-sm); border: 1px solid var(--border-light);">
+                <span style="font-size: 0.75rem; color: var(--text-tertiary); display: block;">COMPOSIÇÃO</span>
+                <strong style="color: var(--text-primary);">100% Poliéster Micro</strong>
+              </div>
+              <div style="background: rgba(255,255,255,0.04); padding: 0.75rem 1.25rem; border-radius: var(--border-radius-sm); border: 1px solid var(--border-light);">
+                <span style="font-size: 0.75rem; color: var(--text-tertiary); display: block;">GRAMATURA</span>
+                <strong style="color: var(--text-primary);">130 - 145 g/m² (Leve & Firme)</strong>
+              </div>
+              <div style="background: rgba(255,255,255,0.04); padding: 0.75rem 1.25rem; border-radius: var(--border-radius-sm); border: 1px solid var(--border-light);">
+                <span style="font-size: 0.75rem; color: var(--text-tertiary); display: block;">TOQUE</span>
+                <strong style="color: var(--text-primary);">Ultra Macio / Sem Transparência</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 2: VITRINE DE PRODUTO & LOJA SHOPEE (CANAL VAREJO)
+         ========================================================================= -->
+    <section class="section" id="varejo-shopee" style="background: rgba(0, 0, 0, 0.25);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Canal Direto de Varejo</span>
+          <h2 class="section-title">Compre no Varejo pela Shopee</h2>
+          <p class="section-desc">Quer comprar de 1 a 5 peças para uso pessoal ou teste de qualidade? Compre com frete rápido, cupom e garantia total na nossa loja oficial Shopee.</p>
+        </div>
+
+        <div class="product-showcase">
+          <!-- Interactive Gallery -->
+          <div class="gallery-container">
+            <img id="gallery-main" src="public/assets/images/camisa-01.png" alt="Camiseta Dry Fit Masculina BJ-Wear" class="gallery-main-image">
+            <div class="gallery-thumbs">
+              <button class="thumb-btn active" data-img="public/assets/images/camisa-01.png" data-alt="Camisetas Preto e Azul no Cabide">
+                <img src="public/assets/images/camisa-01.png" alt="Miniatura 1">
+              </button>
+              <button class="thumb-btn" data-img="public/assets/images/camisa-04.png" data-alt="Modelo vestindo Camiseta Dry Fit Preta">
+                <img src="public/assets/images/camisa-04.png" alt="Miniatura 2">
+              </button>
+              <button class="thumb-btn" data-img="public/assets/images/camisa-05.png" data-alt="Modelo vestindo Camiseta Dry Fit Azul Marinho">
+                <img src="public/assets/images/camisa-05.png" alt="Miniatura 3">
+              </button>
+              <button class="thumb-btn" data-img="public/assets/images/camisa-02.png" data-alt="Camiseta Dry Fit Preta Vista Frontal">
+                <img src="public/assets/images/camisa-02.png" alt="Miniatura 4">
+              </button>
+              <button class="thumb-btn" data-img="public/assets/images/camisa-03.png" data-alt="Camiseta Dry Fit Azul Marinho Vista Frontal">
+                <img src="public/assets/images/camisa-03.png" alt="Miniatura 5">
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Details & Shopee CTA -->
+          <div class="product-info-panel">
+            <div class="badge badge-shopee" style="margin-bottom: 0.75rem;">
+              <span>⭐ Loja Shopee Oficial BJ-WEAR</span>
+            </div>
+
+            <h3 style="font-family: var(--font-family-display); font-size: 2rem; font-weight: 800; color: var(--text-primary); margin-bottom: 0.75rem;">
+              Camiseta Dry Fit Masculina Treino Academia 100%
+            </h3>
+
+            <div style="display: flex; align-items: baseline; gap: 1rem; margin-bottom: 1.5rem;">
+              <span style="font-size: 2.4rem; font-weight: 900; color: #22C55E;">R$ 29,90</span>
+              <span style="font-size: 1.1rem; color: var(--text-tertiary); text-decoration: line-through;">R$ 49,90</span>
+              <span class="badge badge-success">40% OFF</span>
+            </div>
+
+            <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.5rem;">
+              Perfeita para musculação, corrida, crossfit e uso casual no dia a dia. Confeccionada com corte anatômico, acabamento de gola careca com viés pespontado e costuras reforçadas.
+            </p>
+
+            <!-- Color Switcher -->
+            <div>
+              <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-primary); display: block; margin-bottom: 0.5rem;">Selecione a Cor:</span>
+              <div class="color-selector">
+                <button class="color-option-btn active" data-target-img="public/assets/images/camisa-04.png" data-alt="Modelo Preto">
+                  <span class="color-dot black"></span>
+                  <span>Preto Clássico</span>
+                </button>
+                <button class="color-option-btn" data-target-img="public/assets/images/camisa-05.png" data-alt="Modelo Azul Marinho">
+                  <span class="color-dot navy"></span>
+                  <span>Azul Marinho</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Sizing Pills -->
+            <div style="margin-bottom: 2rem;">
+              <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-primary); display: block; margin-bottom: 0.5rem;">Tamanhos Disponíveis:</span>
+              <div style="display: flex; gap: 0.5rem;">
+                <span class="calc-pill active">P</span>
+                <span class="calc-pill active">M</span>
+                <span class="calc-pill active">G</span>
+                <span class="calc-pill active">GG</span>
+              </div>
+            </div>
+
+            <!-- Shopee Direct Buy CTA -->
+            <a href="https://shopee.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-shopee btn-lg" style="width: 100%;" id="btn-buy-shopee">
+              <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M19.5 7.5h-3.75V6a3.75 3.75 0 00-7.5 0v1.5H4.5a.75.75 0 00-.75.75v12a2.25 2.25 0 002.25 2.25h12A2.25 2.25 0 0020.25 20.25v-12a.75.75 0 00-.75-.75zM9.75 6a2.25 2.25 0 014.5 0v1.5h-4.5V6zm9 14.25a.75.75 0 01-.75.75H6a.75.75 0 01-.75-.75V9h3v1.5a.75.75 0 001.5 0V9h4.5v1.5a.75.75 0 001.5 0V9h3v11.25z"/></svg>
+              <span>Comprar na Loja Oficial Shopee</span>
+            </a>
+
+            <div style="display: flex; justify-content: space-around; margin-top: 1.5rem; color: var(--text-tertiary); font-size: 0.82rem;">
+              <span>🛡️ Compra Garantida</span>
+              <span>🚚 Envio pelos Correios / Shopee Xpress</span>
+              <span>🔄 Devolução Grátis em até 7 dias</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: CALCULADORA DE COTAÇÃO B2B (ATACADO & FACÇÃO WHATSAPP)
+         ========================================================================= -->
+    <section class="section" id="calculadora-b2b">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Atacado, Facção & Private Label</span>
+          <h2 class="section-title">Calculadora de Cotação Rápida B2B</h2>
+          <p class="section-desc">Monte a configuração do seu lote em 4 cliques e envie diretamente para o WhatsApp dos nossos cortadores e responsáveis de produção.</p>
+        </div>
+
+        <div class="calculator-box">
+          <div class="calculator-steps">
+            
+            <!-- Step 1 -->
+            <div>
+              <div class="calc-step-label">
+                <span class="step-num">1</span>
+                <span>Selecione a Quantidade Desejada (Lote Mínimo: 20 un)</span>
+              </div>
+              <div class="pill-group">
+                <button class="calc-pill" data-calc-quantity="20 unidades" data-val="20">20 un (Início)</button>
+                <button class="calc-pill active" data-calc-quantity="50 unidades" data-val="50">50 un (Academias)</button>
+                <button class="calc-pill" data-calc-quantity="100 unidades" data-val="100">100 un (Marcas)</button>
+                <button class="calc-pill" data-calc-quantity="500 unidades" data-val="500">500 un (Alta Escala)</button>
+                <button class="calc-pill" data-calc-quantity="1.000+ unidades" data-val="1000">1.000+ un (Distribuidor)</button>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div>
+              <div class="calc-step-label">
+                <span class="step-num">2</span>
+                <span>Escolha o Modelo de Peça</span>
+              </div>
+              <div class="pill-group">
+                <button class="calc-pill active" data-calc-product="Camiseta Dry-Fit Tradicional">Camiseta Dry-Fit Manga Curta</button>
+                <button class="calc-pill" data-calc-product="Regata Cavada Dry-Fit">Regata Cavada Machão</button>
+                <button class="calc-pill" data-calc-product="Camiseta Manga Longa UV50+">Manga Longa UV50+ Esportiva</button>
+                <button class="calc-pill" data-calc-product="Sob Medida / Facção Terceirizada">Facção / Corte & Costura Exclusivo</button>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div>
+              <div class="calc-step-label">
+                <span class="step-num">3</span>
+                <span>Tipo de Tecido & Malha</span>
+              </div>
+              <div class="pill-group">
+                <button class="calc-pill active" data-calc-fabric="Dry-Fit Microfibra 100% Poliéster">Dry-Fit Microfibra 100% Poliéster</button>
+                <button class="calc-pill" data-calc-fabric="Dry-Fit Poliamida 6.6 Premium">Dry-Fit Poliamida 6.6 (Toque Gelado)</button>
+                <button class="calc-pill" data-calc-fabric="Dry-Fit Furadinho / Mesh">Dry-Fit Furadinho / Mesh Ultra Respirável</button>
+                <button class="calc-pill" data-calc-fabric="Malha Fornecida pelo Cliente (Corte e Costura)">Malha Própria do Cliente (Apenas Facção)</button>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div>
+              <div class="calc-step-label">
+                <span class="step-num">4</span>
+                <span>Personalização & Estamparia</span>
+              </div>
+              <div class="pill-group">
+                <button class="calc-pill active" data-calc-custom="Lisa (Sem Estampa / Pronta Entrega)">Lisa (Sem Estampa)</button>
+                <button class="calc-pill" data-calc-custom="Silk-Screen Plastisol">Silk-Screen Tradicional</button>
+                <button class="calc-pill" data-calc-custom="Sublimação Total / Localizada">Sublimação Digital</button>
+                <button class="calc-pill" data-calc-custom="Bordado Computadorizado">Bordado Computadorizado</button>
+                <button class="calc-pill" data-calc-custom="Private Label Completo (Com Tag & Etiqueta)">Private Label Completo (Minha Marca)</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Summary Box & Send Button -->
+          <div class="calc-summary-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
+              <span style="font-weight: 700; color: var(--text-primary); font-size: 1.1rem;">Resumo da sua Cotação:</span>
+              <span id="summary-tier" class="badge badge-glow">🔥 Tier Atacado Corporativo</span>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+              <div><strong>Quantidade:</strong> <span id="summary-qty" style="color: var(--text-primary);">50 unidades</span></div>
+              <div><strong>Produto:</strong> <span id="summary-product" style="color: var(--text-primary);">Camiseta Dry-Fit Tradicional</span></div>
+              <div><strong>Tecido:</strong> <span id="summary-fabric" style="color: var(--text-primary);">Dry-Fit Microfibra</span></div>
+              <div><strong>Personalização:</strong> <span id="summary-custom" style="color: var(--text-primary);">Lisa (Sem Estampa)</span></div>
+            </div>
+
+            <a id="btn-send-quote" href="https://wa.me/5511913267467" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg" style="width: 100%;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.634.072-1.805-.414-1.496-.622-2.457-2.146-2.531-2.247-.074-.1-6.19-8.232-1.39-1.282-.144-.145-.378-.225-.632-.225s-.684.099-.95.396c-.266.297-1.026 1.002-1.026 2.443 0 1.441 1.05 2.833 1.196 3.031.147.198 2.062 3.15 4.996 4.417.698.301 1.243.482 1.668.617.702.223 1.341.192 1.846.116.564-.085 1.73-.707 1.975-1.389.245-.682.245-1.266.171-1.388-.073-.122-.266-.198-.558-.344z"/></svg>
+              <span>Enviar Cotação Pré-Formatada no WhatsApp (+55 11 91326-7467)</span>
+            </a>
+
+            <p style="text-align: center; margin-top: 0.75rem; font-size: 0.8rem; color: var(--text-tertiary);">
+              ⚡ Atendimento técnico comercial em até 15 minutos em horário de produção.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: NOSSA FÁBRICA & TRADIÇÃO FAMILIAR
+         ========================================================================= -->
+    <section class="section factory-section" id="fabrica">
+      <div class="container">
+        <div class="factory-grid">
+          
+          <div class="factory-image-card">
+            <img src="public/assets/images/workshop-hero.jpg" alt="Oficina de costura industrial BJ-Wear operando com mais de 10 máquinas industriais" loading="lazy">
+          </div>
+
+          <div>
+            <span class="section-subtitle">Dignidade, Família & Escala</span>
+            <h2 class="section-title" style="margin-bottom: 1.25rem;">
+              Uma Linha de Produção Que Não Para Para Entregar a Sua Marca no Prazo.
+            </h2>
+            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.25rem;">
+              A <strong>BJ-Wear</strong> nasceu do suor, da paixão e da maestria técnica de uma família de artesãos bolivianos em São Paulo. Aqui, cada máquina tem dono e cada ponto de costura carrega nosso nome.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.75rem;">
+              Com uma bancada contínua de <strong>mais de 10 máquinas industriais</strong> (overlocks pesadas, galoneiras e retas eletrônicas), conseguimos absorver desde a venda diária unitária na Shopee até grandes tiragens corporativas de 5.000 peças com o mesmo padrão rigoroso de acabamento.
+            </p>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="#calculadora-b2b" class="btn btn-cta">
+                <span>Agendar Produção B2B</span>
+              </a>
+              <a href="https://wa.me/5511913267467?text=Ol%C3%A1%20BJ-Wear!%20Gostaria%20de%20conversar%20sobre%20uma%20parceria%20de%20confec%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <span>Falar com o Responsável</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: TABELA DE MEDIDAS OFICIAL
+         ========================================================================= -->
+    <section class="section" id="medidas">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Caimento Perfeito</span>
+          <h2 class="section-title">Tabela de Medidas (Padrão Brasil)</h2>
+          <p class="section-desc">Confira as medidas em centímetros para acertar no pedido do seu tamanho ou da sua grade de atacado.</p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table-custom">
+            <thead>
+              <tr>
+                <th>Tamanho</th>
+                <th>Tórax / Peito (cm)</th>
+                <th>Comprimento / Altura (cm)</th>
+                <th>Manga (cm)</th>
+                <th>Cintura Recomendada (cm)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>P (Pequeno)</strong></td>
+                <td>98 - 102 cm</td>
+                <td>68 cm</td>
+                <td>20 cm</td>
+                <td>80 - 86 cm</td>
+              </tr>
+              <tr>
+                <td><strong>M (Médio)</strong></td>
+                <td>104 - 108 cm</td>
+                <td>70 cm</td>
+                <td>21 cm</td>
+                <td>88 - 94 cm</td>
+              </tr>
+              <tr>
+                <td><strong>G (Grande)</strong></td>
+                <td>110 - 114 cm</td>
+                <td>72 cm</td>
+                <td>22 cm</td>
+                <td>96 - 102 cm</td>
+              </tr>
+              <tr>
+                <td><strong>GG (Extra Grande)</strong></td>
+                <td>116 - 122 cm</td>
+                <td>75 cm</td>
+                <td>23 cm</td>
+                <td>104 - 112 cm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-tertiary); text-align: center; margin-top: 1rem;">
+          * As medidas podem variar em até 1,5 cm devido à maleabilidade natural do tecido sintético Dry-Fit.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 6: FAQ TÉCNICO (PERGUNTAS FREQUENTES)
+         ========================================================================= -->
+    <section class="section" id="faq" style="background: rgba(0, 0, 0, 0.2);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Dúvidas Frequentes</span>
+          <h2 class="section-title">Perguntas Respondidas com Transparência</h2>
+          <p class="section-desc">Tire suas dúvidas sobre prazos de produção, envio, compras na Shopee e faturamento no atacado.</p>
+        </div>
+
+        <div class="faq-list" style="max-width: 800px; margin: 0 auto;">
+          
+          <div class="faq-item active">
+            <button class="faq-question" aria-expanded="true">
+              <span>1. Qual é a quantidade mínima de peças para pedidos no atacado?</span>
+              <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              Para pedidos com preço de atacado direto de fábrica, o lote mínimo (MOQ) começa a partir de <strong>20 peças</strong> (podendo mesclar cores e tamanhos P ao GG). Para compras de 1 a 19 unidades, você pode comprar diretamente pela nossa loja oficial na Shopee.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>2. Vocês fazem peças com a minha marca própria (Private Label)?</span>
+              <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              Sim! Atendemos marcas de vestuário fitness, academias, centros de treinamento e eventos. Podemos aplicar a sua etiqueta interna (termocolante ou cetim), estamparia em Silk Plastisol, sublimação ou bordado computadorizado.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>3. Qual é o prazo médio de confecção para lotes de atacado?</span>
+              <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              Para peças lisas em estoque pronto, o despacho é feito em até <strong>24 a 48 horas</strong>. Para lotes sob encomenda ou personalizados de 50 a 500 peças, o prazo médio de corte, costura e estamparia varia entre <strong>7 a 15 dias úteis</strong>.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>4. Como funcionam o frete e as entregas?</span>
+              <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              Despachamos pedidos para todo o Brasil através dos Correios (PAC / Sedex), transportadoras parceiras (Jadlog, Braspress, Total Express) ou ônibus de excursão saindo dos polos do Brás/Pari em São Paulo.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>5. Como comprar no varejo (apenas 1 ou poucas unidades)?</span>
+              <svg class="faq-chevron" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <div class="faq-answer">
+              Basta clicar no botão "Comprar na Shopee" aqui na página. Você será redirecionado para a nossa loja oficial na Shopee, onde a Camiseta Dry Fit está por <strong>R$ 29,90</strong> com opções de frete grátis e cupons de desconto do marketplace.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div>
+          <a href="#" class="brand-logo" style="margin-bottom: 1rem;">
+            <span>BJ-WEAR</span>
+            <span class="brand-badge">FÁBRICA</span>
+          </a>
+          <p class="footer-brand-desc">
+            Confecção têxtil especializada em activewear, dry-fit esportivo e facção de alta capacidade em São Paulo. Mais de 10 máquinas industriais entregando excelência em cada costura.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Página Inicial</a></li>
+            <li><a href="#diferenciais">Diferenciais do Tecido</a></li>
+            <li><a href="#varejo-shopee">Comprar na Shopee</a></li>
+            <li><a href="#calculadora-b2b">Cotação Atacado</a></li>
+            <li><a href="#fabrica">Nossa Linha de Produção</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Canais de Atendimento</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/5511913267467" target="_blank" rel="noopener noreferrer">WhatsApp: +55 (11) 91326-7467</a></li>
+            <li><a href="https://shopee.com.br" target="_blank" rel="noopener noreferrer">Loja Oficial Shopee</a></li>
+            <li><span style="color: var(--text-secondary);">Segunda a Sexta: 07h às 18h</span></li>
+            <li><span style="color: var(--text-secondary);">Sábados: 07h às 13h</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Localização & Fábrica</h4>
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">
+            📍 São Paulo — SP, Brasil<br>
+            Despachos diários para todo o território nacional via Correios e Transportadora.
+          </p>
+          <span class="badge badge-success">Produção 100% Ativa</span>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 BJ-Wear Confecções. Todos os direitos reservados.
+        </div>
+        <div>
+          Orgulho Artesanal & Rigor Industrial • Confeccionado com Maestria
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       FLOATING WHATSAPP BUTTON (ALWAYS ACCESSIBLE)
+       ========================================================================= -->
+  <a href="https://wa.me/5511913267467?text=Ol%C3%A1%20BJ-Wear!%20Vim%20pelo%20site%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20camisetas%20Dry-Fit." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Falar conosco no WhatsApp">
+    <div class="floating-whatsapp-tooltip">⚡ Atendimento em até 15 min</div>
+    <span class="pulse-beacon"></span>
+    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.634.072-1.805-.414-1.496-.622-2.457-2.146-2.531-2.247-.074-.1-6.19-8.232-1.39-1.282-.144-.145-.378-.225-.632-.225s-.684.099-.95.396c-.266.297-1.026 1.002-1.026 2.443 0 1.441 1.05 2.833 1.196 3.031.147.198 2.062 3.15 4.996 4.417.698.301 1.243.482 1.668.617.702.223 1.341.192 1.846.116.564-.085 1.73-.707 1.975-1.389.245-.682.245-1.266.171-1.388-.073-.122-.266-.198-.558-.344z"/></svg>
+    <span>Fale Conosco</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="scripts/quote-calculator.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

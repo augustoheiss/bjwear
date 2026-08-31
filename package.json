@@ -1,0 +1,19 @@
+{
+  "name": "bjwear",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BJ-Wear Confecções - Landing Page de Alta Conversão B2B e Varejo Shopee",
+  "scripts": {
+    "dev": "npx -y serve . -l 3000",
+    "start": "npx -y serve . -l 3000"
+  },
+  "keywords": [
+    "dry-fit",
+    "confeccao",
+    "atacado",
+    "shopee",
+    "activewear"
+  ],
+  "author": "Augusto Heiss & BJ-Wear",
+  "license": "MIT"
+}

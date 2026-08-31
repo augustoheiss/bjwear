@@ -1,0 +1,10 @@
+# Master Plan & Internal Research
+master-plan/
+
+# Dependencies & Build Artefacts
+node_modules/
+.DS_Store
+Thumbs.db
+.vercel
+dist/
+*.log

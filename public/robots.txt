@@ -1,0 +1,18 @@
+# Robots.txt for BJ-Wear (agency-seo-specialist & agency-aeo-foundations-architect)
+User-agent: *
+Allow: /
+
+# AI Crawlers & Search Engines (AEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://bjwear.vercel.app/sitemap.xml

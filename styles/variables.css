@@ -1,0 +1,80 @@
+/* ==========================================================================
+   BJ-WEAR DESIGN SYSTEM & DESIGN TOKENS (agency-ui-designer & agency-ux-architect)
+   ========================================================================== */
+
+:root {
+  /* Brand Core Colors (Textile & High-Performance Activewear) */
+  --color-primary: #0F172A;          /* Deep Slate Black */
+  --color-primary-light: #1E293B;    /* Charcoal Navy */
+  --color-accent: #2563EB;           /* Performance Cobalt Blue */
+  --color-accent-hover: #1D4ED8;     /* Deep Cobalt */
+  --color-accent-glow: rgba(37, 99, 235, 0.25);
+  
+  --color-cta: #EA580C;              /* Active Ember Orange (High Conversion) */
+  --color-cta-hover: #C2410C;        /* Deep Ember */
+  --color-cta-glow: rgba(234, 88, 12, 0.35);
+
+  --color-shopee: #EE4D2D;           /* Official Shopee Red-Orange */
+  --color-shopee-hover: #D73211;
+  --color-whatsapp: #25D366;         /* Official WhatsApp Green */
+  --color-whatsapp-hover: #1EBE5D;
+  --color-whatsapp-glow: rgba(37, 211, 102, 0.3);
+
+  /* Neutrals & Surfaces */
+  --bg-body: #0B0F19;               /* Ultra-dark Premium Slate */
+  --bg-surface: #111827;            /* Surface Card Base */
+  --bg-surface-elevated: #1F2937;   /* Elevated Card Base */
+  --bg-glass: rgba(17, 24, 39, 0.85);/* Glassmorphism Surface */
+  --bg-glass-border: rgba(255, 255, 255, 0.08);
+
+  --text-primary: #F8FAFC;          /* Crisp White */
+  --text-secondary: #94A3B8;        /* Slate Muted */
+  --text-tertiary: #64748B;         /* Subtle Slate */
+  --text-inverse: #0F172A;
+
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-focus: #3B82F6;
+
+  /* Typography */
+  --font-family-base: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Spacings & Layout */
+  --container-max-width: 1240px;
+  --header-height: 80px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 14px;
+  --border-radius-lg: 20px;
+  --border-radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
+  --shadow-glow-accent: 0 0 30px rgba(37, 99, 235, 0.3);
+  --shadow-glow-whatsapp: 0 8px 24px rgba(37, 211, 102, 0.35);
+}
+
+/* Light Theme Alternative (Toggle Support) */
+[data-theme="light"] {
+  --bg-body: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #F1F5F9;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+  --bg-glass-border: rgba(0, 0, 0, 0.08);
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-tertiary: #94A3B8;
+  --text-inverse: #FFFFFF;
+
+  --border-light: rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.12);
+}

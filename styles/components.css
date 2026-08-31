@@ -1,0 +1,534 @@
+/* ==========================================================================
+   BJ-WEAR UI COMPONENTS & MICRO-INTERACTIONS (agency-ui-designer & agency-whimsy-injector)
+   ========================================================================== */
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.85rem 1.6rem;
+  font-family: var(--font-family-base);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: var(--border-radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition-smooth);
+  user-select: none;
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-lg {
+  padding: 1.1rem 2.2rem;
+  font-size: 1.05rem;
+  border-radius: var(--border-radius-lg);
+}
+
+.btn-cta {
+  background: linear-gradient(135deg, #EA580C 0%, #C2410C 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 20px var(--color-cta-glow);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.btn-cta:hover {
+  background: linear-gradient(135deg, #F97316 0%, #EA580C 100%);
+  box-shadow: 0 6px 25px rgba(234, 88, 12, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #FFFFFF;
+  box-shadow: var(--shadow-glow-whatsapp);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-whatsapp:hover {
+  background: linear-gradient(135deg, #2EE070 0%, #149F8F 100%);
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-shopee {
+  background: linear-gradient(135deg, #EE4D2D 0%, #C92A0A 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(238, 77, 45, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-shopee:hover {
+  background: linear-gradient(135deg, #FF5B3B 0%, #EE4D2D 100%);
+  box-shadow: 0 8px 25px rgba(238, 77, 45, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--bg-surface-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border-light);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* --- Badges & Pills --- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: var(--border-radius-full);
+}
+
+.badge-glow {
+  background: rgba(37, 99, 235, 0.12);
+  color: #60A5FA;
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.2);
+}
+
+.badge-shopee {
+  background: rgba(238, 77, 45, 0.15);
+  color: #FF7A61;
+  border: 1px solid rgba(238, 77, 45, 0.3);
+}
+
+.badge-success {
+  background: rgba(37, 211, 102, 0.12);
+  color: #4ADE80;
+  border: 1px solid rgba(74, 222, 128, 0.3);
+}
+
+.pulse-beacon {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #22C55E;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(34, 197, 94, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
+
+/* --- Cards & Glass Surfaces --- */
+.card-glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--bg-glass-border);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.card-glass:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: var(--shadow-lg);
+}
+
+/* --- Telemetry Metrics Box --- */
+.telemetry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.telemetry-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-md);
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-smooth);
+}
+
+.telemetry-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #2563EB, #EA580C);
+  opacity: 0;
+  transition: opacity var(--transition-smooth);
+}
+
+.telemetry-item:hover::before {
+  opacity: 1;
+}
+
+.telemetry-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-4px);
+}
+
+.telemetry-value {
+  font-family: var(--font-family-display);
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.1;
+  background: linear-gradient(135deg, #FFFFFF 0%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.telemetry-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* --- Interactive Product Gallery --- */
+.product-showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.gallery-container {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  background: #080C14;
+  border: 1px solid var(--border-light);
+}
+
+.gallery-main-image {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+  transition: opacity var(--transition-smooth), transform var(--transition-smooth);
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  overflow-x: auto;
+}
+
+.thumb-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--border-radius-sm);
+  border: 2px solid transparent;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0.6;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.thumb-btn.active,
+.thumb-btn:hover {
+  opacity: 1;
+  border-color: var(--color-accent);
+  transform: scale(1.05);
+}
+
+.thumb-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- Color Selector Pills --- */
+.color-selector {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+.color-option-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-full);
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.color-dot.black { background-color: #111111; }
+.color-dot.navy { background-color: #1E3A8A; }
+
+.color-option-btn.active,
+.color-option-btn:hover {
+  border-color: var(--color-accent);
+  background: rgba(37, 99, 235, 0.15);
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.25);
+}
+
+/* --- B2B RFQ Calculator Widget --- */
+.calculator-box {
+  background: linear-gradient(145deg, rgba(17, 24, 39, 0.95), rgba(30, 41, 59, 0.85));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--border-radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+}
+
+.calculator-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.calc-step-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.85rem;
+}
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: var(--color-accent);
+  color: #FFFFFF;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.calc-pill {
+  padding: 0.65rem 1.15rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-md);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.calc-pill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+.calc-pill.active {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.25), rgba(37, 99, 235, 0.1));
+  border-color: #3B82F6;
+  color: #FFFFFF;
+  box-shadow: 0 0 14px rgba(59, 130, 246, 0.3);
+}
+
+.calc-summary-card {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--border-radius-md);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* --- Sizing Table --- */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-light);
+}
+
+.table-custom {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.table-custom th {
+  background: var(--bg-surface-elevated);
+  color: var(--text-primary);
+  padding: 1rem 1.25rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.table-custom td {
+  padding: 1rem 1.25rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.table-custom tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--text-primary);
+}
+
+/* --- FAQ Accordion --- */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition-smooth);
+}
+
+.faq-item.active {
+  border-color: var(--color-accent);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-chevron {
+  transition: transform var(--transition-smooth);
+  color: var(--text-tertiary);
+}
+
+.faq-item.active .faq-chevron {
+  transform: rotate(180deg);
+  color: var(--color-accent);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-smooth), padding var(--transition-smooth);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0 1.5rem;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding: 0 1.5rem 1.25rem 1.5rem;
+}
+
+/* --- Floating WhatsApp Button --- */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #25D366;
+  color: #FFFFFF;
+  padding: 0.85rem 1.35rem;
+  border-radius: var(--border-radius-full);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.45);
+  transition: all var(--transition-spring);
+}
+
+.floating-whatsapp:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 35px rgba(37, 211, 102, 0.6);
+  background: #2ee070;
+}
+
+.floating-whatsapp-tooltip {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 12px);
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-light);
+  color: var(--text-primary);
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: var(--shadow-md);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: all var(--transition-smooth);
+}
+
+.floating-whatsapp:hover .floating-whatsapp-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
